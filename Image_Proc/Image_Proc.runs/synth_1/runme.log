@@ -1,0 +1,31 @@
+
+*** Running vivado
+    with args -log MedianFilter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MedianFilter.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source MedianFilter.tcl -notrace
+Command: synth_design -top MedianFilter -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7948
+ERROR: [Synth 8-2715] syntax error near initial [C:/Users/muzer/Desktop/EEE4120F/YODA/RTL/Image_Proc/Image_Proc.srcs/sources_1/new/median.v:41]
+ERROR: [Synth 8-2715] syntax error near = [C:/Users/muzer/Desktop/EEE4120F/YODA/RTL/Image_Proc/Image_Proc.srcs/sources_1/new/median.v:46]
+ERROR: [Synth 8-2715] syntax error near = [C:/Users/muzer/Desktop/EEE4120F/YODA/RTL/Image_Proc/Image_Proc.srcs/sources_1/new/median.v:47]
+ERROR: [Synth 8-2715] syntax error near = [C:/Users/muzer/Desktop/EEE4120F/YODA/RTL/Image_Proc/Image_Proc.srcs/sources_1/new/median.v:48]
+ERROR: [Synth 8-1852] concurrent assignment to a non-net pixel_out is not permitted [C:/Users/muzer/Desktop/EEE4120F/YODA/RTL/Image_Proc/Image_Proc.srcs/sources_1/new/median.v:93]
+INFO: [Synth 8-2350] module MedianFilter ignored due to previous errors [C:/Users/muzer/Desktop/EEE4120F/YODA/RTL/Image_Proc/Image_Proc.srcs/sources_1/new/median.v:21]
+Failed to read verilog 'C:/Users/muzer/Desktop/EEE4120F/YODA/RTL/Image_Proc/Image_Proc.srcs/sources_1/new/median.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu May 18 14:46:06 2023...
